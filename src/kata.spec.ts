@@ -12,6 +12,12 @@ describe('Kata', () => {
     [8, 'VIII'],
     [9, 'IX'],
     [10, 'X'],
+    [14, 'XIV'],
+    [18, 'XVIII'],
+    [24, 'XXIV'],
+    [44, 'XLIV'],
+    [128, 'CXXVIII'],
+    [999, 'CMXCIX'],
   ])('when given %p should return %p', (input, expected) => {
     expect(toRoman(input)).toBe(expected);
   });
