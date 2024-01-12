@@ -1,7 +1,11 @@
 import { toRoman } from './kata';
 
 describe('Kata', () => {
-  test('should return I when given 1', () => {
-    expect(toRoman(1)).toBe('I');
+  test.each([
+    [1, 'I'],
+    [2, 'II'],
+    [3, 'III'],
+  ])('when given %p should return %p', (input, expected) => {
+    expect(toRoman(input)).toBe(expected);
   });
 });
